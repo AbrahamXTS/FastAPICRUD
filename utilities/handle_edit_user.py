@@ -1,7 +1,6 @@
 from passlib.hash import sha256_crypt
 from models.user import UserModel, UserEditedModel
 
-
 def handle_edit_user(userActual: UserModel, userEditado: UserEditedModel):
 
     usuario_actual = userActual

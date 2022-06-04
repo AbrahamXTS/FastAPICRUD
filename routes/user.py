@@ -1,11 +1,11 @@
-from fastapi import APIRouter, Response, status
+from bson import ObjectId
 from config.database import db
-from models.user import UserModel, UserEditedModel
+from fastapi import APIRouter, Response, status
+from starlette.status import HTTP_204_NO_CONTENT
 from schemas.user import userEntity, usersEntity
+from models.user import UserModel, UserEditedModel
 from utilities.handle_new_user import handle_new_user
 from utilities.handle_edit_user import handle_edit_user
-from bson import ObjectId
-from starlette.status import HTTP_204_NO_CONTENT
 
 user = APIRouter()
 

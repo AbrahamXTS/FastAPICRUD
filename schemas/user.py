@@ -9,7 +9,6 @@ def userEntity(user) -> dict:
         "password": user["password"]
     }
 
-
 def usersEntity(usersList) -> list:
     # Por cada usuario en la lista de usuarios, me vas a crear una entidad con la función ⬆️
     return [userEntity(user) for user in usersList]
