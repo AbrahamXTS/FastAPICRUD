@@ -1,6 +1,6 @@
 import os
-# from dotenv import load_dotenv
 from pymongo import MongoClient
+# from dotenv import load_dotenv
 
 # Unicamente para desarrollo
 # load_dotenv()

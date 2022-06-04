@@ -12,7 +12,7 @@ app = FastAPI(
 )
 
 @app.get("/", response_model = dict, tags = ["Root"])
-def hello():
+def say_hello():
     return {"Hola": "Bienvenido a mi API"}
 
 app.include_router(user)
